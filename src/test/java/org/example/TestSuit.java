@@ -5,19 +5,19 @@ import org.testng.annotations.Test;
 public class TestSuit extends BaseTest
 {
 
-    HomePage homePage = new HomePage();
-    RegisterPage registerPage= new RegisterPage();
-    RegistrationResultPage registrationResultPage= new RegistrationResultPage();
-    DesktopCategoryPage desktopCategoryPage = new DesktopCategoryPage();
-    ShareNewsArtical shareNewsArtical = new ShareNewsArtical();
+    HomePage homePage = new HomePage(); // to open home page
+    RegisterPage registerPage= new RegisterPage(); // fill in the registration details.
+    RegistrationResultPage registrationResultPage= new RegistrationResultPage(); // verify the registration detail outcome.
+    DesktopCategoryPage desktopCategoryPage = new DesktopCategoryPage(); // object of Desktop Page
+    ShareNewsArtical shareNewsArtical = new ShareNewsArtical(); // object of Share news page.
 
     @Test (priority = 1)
     public void Registration()
     {
-        homePage.clickOnRegisterButton();
-        homePage.toVerifyUserisonRegisterationPage();
-        registerPage.enterRegistrationDetails();
-        registrationResultPage.toVerifyUserHasBeenSuccessfullyRegistered();
+        homePage.clickOnRegisterButton();  // to open home page
+        homePage.toVerifyUserisonRegisterationPage(); // to verify the correct homepage.
+        registerPage.enterRegistrationDetails(); // fill in the registration details.
+        registrationResultPage.toVerifyUserHasBeenSuccessfullyRegistered(); // verify the registration detail outcome.
     }
 
     @Test (priority = 2)

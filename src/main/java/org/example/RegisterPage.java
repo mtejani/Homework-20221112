@@ -7,19 +7,19 @@ import org.testng.Assert;
 public class RegisterPage extends Utils
 {
 
-    private By _registerButton = By.className("ico-register");
-    private By _firtNameField = By.id("FirstName");
-    private By _maleFemaleRadioButton = By.id("gender-male");
-    private By _lastNameField = By.id("LastName");
-    private By _selectBirthday = By.name("DateOfBirthDay");
-    private By _selectBirthMonth = By.name("DateOfBirthMonth");
-    private By _selectBirthYear = By.name("DateOfBirthYear");
-    private By _emailField = By.id("Email");
-    private By _companyNameField = By.id("Company");
-    private By _passwordField = By.id("Password");
-    private By _passwordConfirmField = By.id("ConfirmPassword");
-    private By _registerSubmitButton = By.id("register-button");
-    private By _readMsg = By.className("result");
+    private By _registerButton = By.className("ico-register"); // parameter for register button
+    private By _firtNameField = By.id("FirstName"); // parameter for first name
+    private By _maleFemaleRadioButton = By.id("gender-male"); // parameter for gender
+    private By _lastNameField = By.id("LastName"); // parameter for last name
+    private By _selectBirthday = By.name("DateOfBirthDay"); // parameter for birthdate
+    private By _selectBirthMonth = By.name("DateOfBirthMonth"); // parameter for birthmonth
+    private By _selectBirthYear = By.name("DateOfBirthYear"); // parameter for birthyear
+    private By _emailField = By.id("Email"); // parameter for email field
+    private By _companyNameField = By.id("Company"); // parameter for company name
+    private By _passwordField = By.id("Password"); // parameter for password
+    private By _passwordConfirmField = By.id("ConfirmPassword"); // parameter for reconfirmation of passwords.
+    private By _registerSubmitButton = By.id("register-button"); // parameter for register butt
+    private By _readMsg = By.className("result"); // parameter for register button
 
 
 

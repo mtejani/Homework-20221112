@@ -14,9 +14,10 @@ public class DesktopCategoryPage extends Utils
 
     public void toVerifyUserIsOnDesktopCategoryPage()
     {
-        //Assert.assertEquals(clickOnElement(_desktopCategory),"fsfsf","sfsf");
+        clickOnElement(_computerCategory);
+        clickOnElement(_desktopCategory);
+        Assert.assertEquals(driver.getCurrentUrl(),"https://demo.nopcommerce.com/desktops","You are not on Desktop category page");
 
-        //Assert.assertEquals(waitForUrlTobe();"//demo.nopcommerce.com/desktops","You are On Desktop Category Item Page");
     }
 
     public void readDesktopCategoryItem()

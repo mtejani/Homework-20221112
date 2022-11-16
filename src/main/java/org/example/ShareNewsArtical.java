@@ -19,7 +19,7 @@ public class ShareNewsArtical extends Utils
         clickOnElement(_shareNewsButton); //to share news click button share.
 
         String readMsg = getTextFromElement(_redMsg);// to print registration confirmation.
-        System.out.println("\n"+readMsg+"\n"+timeStamp()); // to print registration confirmation with timestamp.
+        System.out.println("\n"+readMsg+"\n"+"Test time and date:"+timeStamp()); // to print registration confirmation with timestamp.
     }
 
 
